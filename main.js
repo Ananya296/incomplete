@@ -1,4 +1,4 @@
-canvas = document.getElementById('myCanvas');
+canvas = document.getElementById("myCanvas");
 ctx = canvas.getContext("2d");
 
 img_width = 300;
@@ -40,9 +40,16 @@ function my_keydown(e)
 		{
 		 numberkey();
 		 document.getElementById("d1").innerHTML="You pressed the Number key";
-		console.log("Alphabet Key");
+		console.log("Number Key");
 		}
+
+		else if((keyPressed >=48 && keyPressed<=57)) 
+		{
+		 numberkey();
+		 document.getElementById("d1").innerHTML="You pressed the Number key";
+		console.log("Number Key");
 		}
+		
 		
 	 else{
 		otherkey();
